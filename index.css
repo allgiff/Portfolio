@@ -1,0 +1,15 @@
+html {
+  margin: 0 auto;
+}
+
+header {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div img {
+  display: inline-block;
+  margin: 0 auto;
+}
