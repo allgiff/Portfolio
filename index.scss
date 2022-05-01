@@ -50,6 +50,12 @@
             color: powderblue;
             cursor: pointer;
         }
+
+        img {
+            max-width: 400px;
+            max-height: 400px;
+        }
+
         @media screen and (min-width: 1000px) {
             
         }
