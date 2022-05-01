@@ -58,9 +58,10 @@
         }
 
         @media only screen and (max-width: 400px) {
-            html {
-                max-width: 300px;
+           main {
+                width: 100%;
                 margin: 0 auto;
+                display: block;
             }
             
             li {
