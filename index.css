@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap");
-html {
-  max-width: 1000px;
+body, html {
   margin: 0 auto;
+  padding: 0;
+  width: 75%;
+  height: 100%;
+  box-sizing: border-box;
   background-color: #FFFDFB;
-  padding-bottom: 40px;
 }
 
-body {
-  width: 950px;
-  margin: 0 auto;
-  height: 100%;
+* {
+  box-sizing: inherit;
 }
 
 h1 {
@@ -32,15 +32,6 @@ p {
   padding-top: 0px;
 }
 
-li {
-  font-family: "Source Sans Pro", sans-serif;
-  padding: 10px;
-  padding-top: 0px;
-  padding-bottom: 20px;
-  display: inline-block;
-  text-align: center;
-}
-
 a {
   font-family: "Source Sans Pro", sans-serif;
   padding: 0px 0px 20px 20px;
@@ -59,22 +50,40 @@ a:hover {
   cursor: pointer;
 }
 
-img {
-  max-width: 100%;
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
 }
 
-@media only screen and (max-width: 400px) {
-  main {
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  width: 100%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  body, html {
     width: 100%;
     margin: 0 auto;
-    display: block;
+  }
+
+  .column {
+    width: 100%;
   }
 
   img {
-    max-width: 100%;
-  }
-
-  li {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 }
