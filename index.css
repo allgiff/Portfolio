@@ -70,6 +70,10 @@ img {
     display: block;
   }
 
+  img {
+    max-width: 100%;
+  }
+
   li {
     display: block;
   }
